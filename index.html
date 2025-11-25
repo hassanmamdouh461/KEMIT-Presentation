@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEMIT - قوة فرعونية، بابتكار المستقبل</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="nav-arrow nav-prev" onclick="previousSlide()">
+        <span>❮</span>
+    </div>
+    <div class="nav-arrow nav-next" onclick="nextSlide()">
+        <span>❯</span>
+    </div>
+
+    <!-- Slides Container -->
+    <div class="slides-container">
+        
+        <!-- Slide 1: Grand Opening -->
+        <div class="slide active" id="slide1">
+            <div class="slide-content">
+                <div class="content-left">
+                    <!-- Eye of Horus Logo -->
+                    <div class="horus-eye">
+                        <svg viewBox="0 0 100 60" class="horus-svg">
+                            <path d="M10,30 Q30,10 50,30 Q70,10 90,30 Q70,20 50,35 Q30,20 10,30 M50,35 L50,45 M35,35 Q40,40 50,40 Q60,40 65,35" 
+                                  fill="none" stroke="var(--gold-primary)" stroke-width="2"/>
+                            <circle cx="50" cy="30" r="8" fill="var(--gold-primary)"/>
+                            <circle cx="50" cy="30" r="4" fill="var(--dark-bg)"/>
+                        </svg>
+                    </div>
+
+                    <!-- Main Title -->
+                    <h1 class="main-title">KEMIT</h1>
+                    
+                    <!-- Subtitle with decorations -->
+                    <div class="subtitle-container">
+                        <div class="decoration-line"></div>
+                        <h2 class="subtitle">قوة فرعونية، بابتكار المستقبل</h2>
+                        <div class="decoration-line"></div>
+                    </div>
+
+                    <!-- Feature Pills -->
+                    <div class="feature-pills">
+                        <div class="pill">⚡ أداء استثنائي</div>
+                        <div class="pill">👑 تصميم فرعوني</div>
+                        <div class="pill">🔮 ابتكار المستقبل</div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="description">
+                        <p>سيارة سيدان استثنائية تجمع ما بين <span class="highlight">التصميم الفرعوني القوي</span> والابتكار العملي.</p>
+                        <p>تُقدّم أداءً ثابتاً وتكنولوجيا موزّعة بذكاء على <span class="highlight">3 فئات</span> تلبي كافة الاحتياجات.</p>
+                    </div>
+
+                    <!-- Statistics Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500</div>
+                            <div class="stat-label">حصان</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">سنوات ضمان</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">فئات متميزة</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <!-- Car Display Frame -->
+                    <div class="car-frame">
+                        <div class="frame-corner corner-tl"></div>
+                        <div class="frame-corner corner-tr"></div>
+                        <div class="frame-corner corner-bl"></div>
+                        <div class="frame-corner corner-br"></div>
+                        
+                        <div class="car-image-container">
+                            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&auto=format&fit=crop" alt="KEMIT Car" class="car-image">
+                            <div class="spotlight"></div>
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="floating-badge badge-top">
+                            🏆 Premium Luxury Edition
+                        </div>
+                        <div class="floating-badge badge-bottom">
+                            ✨ Egyptian Craftsmanship
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Innovation Core -->
+        <div class="slide" id="slide2">
+            <h1 class="slide-title pulse-glow">تجربة قيادة لم يسبق لها مثيل</h1>
+            
+            <div class="features-grid">
+                <!-- Golden Ratio Feature -->
+                <div class="feature-card magnetic-card" data-feature="golden">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 100 100" class="golden-ratio-svg">
+                            <rect x="10" y="10" width="80" height="80" fill="none" stroke="var(--gold-primary)" stroke-width="2"/>
+                            <line x1="10" y1="41.6" x2="90" y2="41.6" stroke="var(--gold-primary)" stroke-width="1" stroke-dasharray="3,3"/>
+                            <line x1="41.6" y1="10" x2="41.6" y2="90" stroke="var(--gold-primary)" stroke-width="1" stroke-dasharray="3,3"/>
+                            <text x="25" y="30" fill="var(--gold-primary)" font-size="10">38.2%</text>
+                            <text x="55" y="70" fill="var(--gold-primary)" font-size="10">61.8%</text>
+                        </svg>
+                    </div>
+                    <h3>النسبة الذهبية</h3>
+                    <p>استخدام النسب الذهبية في التصميم الهيكل الخارجي والداخلي لشكل متناغم بصرياً فريد.</p>
+                </div>
+
+                <!-- Amun AI Feature -->
+                <div class="feature-card magnetic-card" data-feature="ai">
+                    <div class="card-icon">
+                        <div class="ai-watch">
+                            <div class="watch-circle">
+                                <span class="ai-text">AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ذكاء يحفظ تفضيلاتك</h3>
+                    <div class="ai-settings">
+                        <div class="setting-item">المقعد ✓</div>
+                        <div class="setting-item">الإضاءة ✓</div>
+                        <div class="setting-item">التعليق ✓</div>
+                    </div>
+                    <p>مساعد "آمون" الذكي (Amun AI) يتعلّم تفضيلات السائقين ويضبط السيارة تلقائياً قبل دخولك.</p>
+                </div>
+
+                <!-- Comfort Feature -->
+                <div class="feature-card magnetic-card" data-feature="comfort">
+                    <div class="card-icon">
+                        <div class="seat-icon">
+                            <div class="seat-base"></div>
+                            <div class="thermal-overlay">
+                                <div class="heat-point"></div>
+                                <div class="heat-point"></div>
+                                <div class="heat-point"></div>
+                                <div class="heat-point"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>راحة القصور الفرعونية</h3>
+                    <p>نظام ممتاز للمقاعد بتصميم هندسي مُستوحى من الحضارات القديمة، مُزوّدة بوظيفة تدليك متقدمة.</p>
+                </div>
+            </div>
+
+            <!-- Connection Line -->
+            <svg class="connection-line" viewBox="0 0 100 10">
+                <line x1="0" y1="5" x2="100" y2="5" stroke="var(--gold-primary)" stroke-width="0.5" stroke-dasharray="5,5"/>
+            </svg>
+        </div>
+
+        <!-- Slide 3: Trust & Exclusivity -->
+        <div class="slide" id="slide3">
+            <h1 class="slide-title pulse-glow">ضمان طويل الأزل</h1>
+            
+            <div class="trust-grid">
+                <!-- Warranty Card -->
+                <div class="trust-card bounce-in">
+                    <div class="ankh-symbol">
+                        <svg viewBox="0 0 100 150" class="ankh-svg">
+                            <circle cx="50" cy="30" r="20" fill="none" stroke="var(--gold-primary)" stroke-width="3"/>
+                            <line x1="50" y1="50" x2="50" y2="130" stroke="var(--gold-primary)" stroke-width="3"/>
+                            <line x1="30" y1="70" x2="70" y2="70" stroke="var(--gold-primary)" stroke-width="3"/>
+                        </svg>
+                        <div class="warranty-badge">10+ سنوات</div>
+                    </div>
+                    <h3>الضمان</h3>
+                    <p>ضمان غير مسبوق يمتد لـ <strong>10 سنوات أو أكثر</strong> ويُغطي أعطال المحرك والبطارية.</p>
+                </div>
+
+                <!-- Mobile Service Card -->
+                <div class="trust-card bounce-in">
+                    <div class="service-icon rotating-service">
+                        <div class="service-circle">
+                            <span class="service-arrow">↻</span>
+                        </div>
+                    </div>
+                    <h3>خدمات الصيانة</h3>
+                    <p class="highlight-text">العميل لا يحتاج لزيارة مركز الصيانة أبداً!</p>
+                    <p>نرسل فني متخصص مجهز بالكامل إلى موقع العميل.</p>
+                </div>
+
+                <!-- Exclusive Materials Card -->
+                <div class="trust-card bounce-in">
+                    <div class="materials-showcase">
+                        <div class="material-sample wood">
+                            <span>خشب الآبنوس</span>
+                        </div>
+                        <div class="material-sample marble">
+                            <span>رخام مصري</span>
+                        </div>
+                    </div>
+                    <div class="exclusive-badge">Exclusive Egyptian Materials</div>
+                    <h3>التفرد بالمواد الحصرية</h3>
+                    <p>دمج مواد مصرية نادرة في لوحة القيادة، لضمان هوية لا مثيل لها.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Power & Customization -->
+        <div class="slide" id="slide4">
+            <h1 class="slide-title pulse-glow">القوة والابتكار</h1>
+            
+            <!-- Speed Lines Background -->
+            <div class="speed-lines"></div>
+            
+            <div class="tiers-container">
+                <!-- Standard Tier -->
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3>Standard</h3>
+                    </div>
+                    <div class="tier-power">290 حصان</div>
+                    <ul class="tier-features">
+                        <li>📺 شاشة 10 بوصة</li>
+                        <li>🛡️ ABS + كاميرا خلفية</li>
+                        <li>💺 مقاعد قماش</li>
+                        <li>🔊 6 سماعات</li>
+                        <li>🔑 دخول بزر</li>
+                    </ul>
+                </div>
+
+                <!-- Premium Tier -->
+                <div class="tier-card tier-premium">
+                    <div class="tier-header">
+                        <h3>Premium</h3>
+                    </div>
+                    <div class="tier-power">380 حصان</div>
+                    <ul class="tier-features">
+                        <li>📺 شاشة 13 بوصة / رقمية كاملة</li>
+                        <li>🛡️ تفادي اصطدام + نقاط عمياء</li>
+                        <li>💺 جلد صناعي</li>
+                        <li>🔊 10 سماعات</li>
+                        <li>📱 شحن لاسلكي</li>
+                    </ul>
+                </div>
+
+                <!-- Royal Tier -->
+                <div class="tier-card tier-royal">
+                    <div class="tier-header royal-header">
+                        <h3>👑 Royal (Full Option)</h3>
+                    </div>
+                    
+                    <!-- Engine Wireframe -->
+                    <div class="engine-wireframe">
+                        <div class="wireframe-grid"></div>
+                        <div class="power-display">
+                            <span class="power-counter" data-target="500">0</span>
+                            <span class="power-unit">حصان</span>
+                        </div>
+                    </div>
+
+                    <ul class="tier-features royal-features">
+                        <li>⚡ توين توربو (450-500 حصان)</li>
+                        <li>📺 شاشة 15 بوصة + عدادات 12 بوصة</li>
+                        <li>🤖 قيادة شبه ذاتية + رادار 360°</li>
+                        <li>💺 جلد طبيعي + تبريد/تسخين + ذاكرة</li>
+                        <li>🔊 14 سماعة</li>
+                        <li>🗺️ GPS بالواقع المعزز (AR)</li>
+                        <li>🅿️ مساعد صف تلقائي</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="royal-message">القيادة الحقيقية تبدأ من 500 حصان، في الفئة الملكية (Royal)</p>
+        </div>
+
+        <!-- Slide 5: Partnership & CTA -->
+        <div class="slide" id="slide5">
+            <h1 class="slide-title pulse-glow">شراكة مُمتدة: امتلاك KEMIT الآن</h1>
+            
+            <div class="benefits-grid">
+                <!-- Installment Benefit -->
+                <div class="benefit-card flip-in">
+                    <div class="benefit-icon">
+                        <span class="icon-emoji">💰</span>
+                    </div>
+                    <h3>تقسيط مريح</h3>
+                    <p>نُقدّم خطط تقسيط بفترة أطول وأكثر مرونة.</p>
+                </div>
+
+                <!-- Battery Warranty -->
+                <div class="benefit-card flip-in featured-benefit">
+                    <div class="benefit-icon">
+                        <div class="battery-icon">
+                            <div class="battery-body">
+                                <div class="battery-level"></div>
+                                <span class="battery-percent">80%</span>
+                            </div>
+                        </div>
+                        <div class="guaranteed-badge">Guaranteed</div>
+                    </div>
+                    <h3>ضمان كفاءة البطارية</h3>
+                    <p>نضمن للعميل أن كفاءة البطارية لا تقل عن <strong>80%</strong> لمدة سنوات.</p>
+                </div>
+
+                <!-- Free Home Charger -->
+                <div class="benefit-card flip-in">
+                    <div class="benefit-icon">
+                        <span class="icon-emoji">🔌</span>
+                        <div class="free-tag">FREE</div>
+                    </div>
+                    <h3>شاحن منزلي مجاني</h3>
+                    <p>شاحن فاخر يُشترى السيارة، جزء أساسي من الصفقة بدون تكلفة إضافية.</p>
+                </div>
+
+                <!-- 24/7 Emergency -->
+                <div class="benefit-card flip-in">
+                    <div class="benefit-icon">
+                        <div class="clock-247">
+                            <span class="clock-emoji">⏰</span>
+                            <span class="clock-text">24/7</span>
+                        </div>
+                    </div>
+                    <h3>خدمة طوارئ 24/7</h3>
+                    <p>خدمة طوارئ مُستقلة على مدار 24 ساعة.</p>
+                </div>
+            </div>
+
+            <!-- Final CTA -->
+            <div class="final-cta">
+                <div class="cta-logo">KEMIT</div>
+                <div class="cta-banner shimmer-box">
+                    <p class="cta-text">ابدأ رحلة الخلود اليوم. تفضل بزيارة جناحنا</p>
+                </div>
+                <p class="cta-tagline">نحن لا نبيع سيارة، نحن نطلق العنان لأسلوب حياة جديد</p>
+            </div>
+        </div>
+
+        <!-- Slide 6: Thank You -->
+        <div class="slide" id="slide6">
+            <div class="thank-you-container">
+                <div class="horus-eye-large">
+                    <svg viewBox="0 0 200 120" class="horus-svg">
+                        <path d="M20,60 Q60,20 100,60 Q140,20 180,60 Q140,40 100,70 Q60,40 20,60 M100,70 L100,90 M70,70 Q80,80 100,80 Q120,80 130,70" 
+                              fill="none" stroke="var(--gold-primary)" stroke-width="3"/>
+                        <circle cx="100" cy="60" r="15" fill="var(--gold-primary)"/>
+                        <circle cx="100" cy="60" r="8" fill="var(--dark-bg)"/>
+                    </svg>
+                </div>
+                
+                <h1 class="thank-you-title">شكراً لكم</h1>
+                <h2 class="thank-you-subtitle">KEMIT</h2>
+                <p class="thank-you-message">قوة فرعونية، بابتكار المستقبل</p>
+                
+                <div class="thank-you-ornament">
+                    <div class="ornament-line"></div>
+                    <span class="ornament-symbol">✦</span>
+                    <div class="ornament-line"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
